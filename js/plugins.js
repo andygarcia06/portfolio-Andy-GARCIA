@@ -89,11 +89,11 @@
 		adjustNav: function(self, $parent) {
 			self.$elem.find('.' + self.config.currentClass).removeClass(self.config.currentClass);
 			$parent.addClass(self.config.currentClass);
-			var ccc 		= $('.orido_tm_header .menu .ccc');
-			var e			= $('.orido_tm_header .menu .current a');
+			var ccc 		= $('.fronthand_tm_header .menu .ccc');
+			var e			= $('.fronthand_tm_header .menu .current a');
 			var left 		= e.offset().left;
 			var width		= e.outerWidth();
-			var menuleft 	= $('.orido_tm_header .menu').offset().left;
+			var menuleft 	= $('.fronthand_tm_header .menu').offset().left;
 			ccc.css({left: (left-menuleft) + 'px',width: width + 'px'});
 				
 		},
@@ -220,7 +220,7 @@
 		scrollTo: function(target, callback) {
 			var ww			= $(window).width();
 			var offset 		= $(target).offset().top;
-			var topbar		= jQuery('.orido_tm_header').height();
+			var topbar		= jQuery('.fronthand_tm_header').height();
 			
 			if(ww>=1040){
 				$('html, body').animate({

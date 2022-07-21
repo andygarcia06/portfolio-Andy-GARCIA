@@ -10,36 +10,36 @@ jQuery(document).ready(function(){
 	
 	// here all ready functions
 	
-	orido_tm_modalbox();
-	orido_tm_counter();
-	orido_tm_trigger_menu();
-	orido_tm_service_popup();
-	orido_tm_modalbox_news();
-	orido_tm_modalbox_portfolio();
+	fronthand_tm_modalbox();
+	fronthand_tm_counter();
+	fronthand_tm_trigger_menu();
+	fronthand_tm_service_popup();
+	fronthand_tm_modalbox_news();
+	fronthand_tm_modalbox_portfolio();
 	progress_by_frenify();
-	orido_tm_cursor();
-	orido_tm_imgtosvg();
-	orido_tm_popup();
-	orido_tm_data_images();
-	orido_tm_contact_form();
-	orido_tm_owl_carousel();
-	orido_tm_down();
-	orido_tm_nav_bg();
+	fronthand_tm_cursor();
+	fronthand_tm_imgtosvg();
+	fronthand_tm_popup();
+	fronthand_tm_data_images();
+	fronthand_tm_contact_form();
+	fronthand_tm_owl_carousel();
+	fronthand_tm_down();
+	fronthand_tm_nav_bg();
 	hashtag();
 	filter_hashtag();
 	service_hashtag();
-	orido_tm_totop();
-	orido_tm_about_tabs();
+	fronthand_tm_totop();
+	fronthand_tm_about_tabs();
 	
 	jQuery(window).load('body', function(){
-		orido_tm_my_load();
+		fronthand_tm_my_load();
 		setTimeout(function() {
-			orido_tm_portfolio_masonry();
+			fronthand_tm_portfolio_masonry();
 		}, 500);
 	});
 	
 	jQuery(window).on('scroll', function(){
-		orido_tm_progress_line();
+		fronthand_tm_progress_line();
 	});
 	
 });
@@ -52,7 +52,7 @@ jQuery(document).ready(function(){
 // --------------------   COUNTER    -------------------
 // -----------------------------------------------------
 
-function orido_tm_counter(){
+function fronthand_tm_counter(){
 	
 	"use strict";
 	
@@ -78,24 +78,24 @@ function orido_tm_counter(){
 // --------------------   MODALBOX    ------------------
 // -----------------------------------------------------
 
-function orido_tm_modalbox(){
+function fronthand_tm_modalbox(){
 	
 	"use strict";
 	
-	jQuery('.orido_tm_all_wrap').prepend('<div class="orido_tm_modalbox"><div class="box_inner"><div class="close"><a href="#"><i class="icon-cancel"></i></a></div><div class="description_wrap"></div></div></div>');
+	jQuery('.fronthand_tm_all_wrap').prepend('<div class="fronthand_tm_modalbox"><div class="box_inner"><div class="close"><a href="#"><i class="icon-cancel"></i></a></div><div class="description_wrap"></div></div></div>');
 }
 
 // -----------------------------------------------------
 // ---------------   TRIGGER MENU    -------------------
 // -----------------------------------------------------
 
-function orido_tm_trigger_menu(){
+function fronthand_tm_trigger_menu(){
 	
 	"use strict";
 
 	var hamburger 		= jQuery('.trigger .hamburger');
-	var mobileMenu		= jQuery('.orido_tm_mobile_menu .dropdown');
-	var mobileMenuList	= jQuery('.orido_tm_mobile_menu .dropdown .dropdown_inner ul li a');
+	var mobileMenu		= jQuery('.fronthand_tm_mobile_menu .dropdown');
+	var mobileMenuList	= jQuery('.fronthand_tm_mobile_menu .dropdown .dropdown_inner ul li a');
 
 	hamburger.on('click',function(){
 		var element 	= jQuery(this);
@@ -121,13 +121,13 @@ function orido_tm_trigger_menu(){
 // -------------  SERVICE POPUP  -------------------
 // -------------------------------------------------
 
-function orido_tm_service_popup(){
+function fronthand_tm_service_popup(){
 	
 	"use strict";
 	
-	var modalBox		= jQuery('.orido_tm_modalbox');
-	var button			= jQuery('.orido_tm_service .orido_tm_full_link');
-	var list			= jQuery('.orido_tm_service .service_list ul li');
+	var modalBox		= jQuery('.fronthand_tm_modalbox');
+	var button			= jQuery('.fronthand_tm_service .fronthand_tm_full_link');
+	var list			= jQuery('.fronthand_tm_service .service_list ul li');
 	var closePopup		= modalBox.find('.close');
 	
 	button.on('click',function(){
@@ -141,7 +141,7 @@ function orido_tm_service_popup(){
 		modalBox.addClass('opened');
 		modalBox.find('.description_wrap').html(content);
 		modalBox.find('.service_popup_informations').prepend('<div class="image"><img src="img/thumbs/4-2.jpg" alt="" /><div class="main" data-img-url="'+elImage+'"></div></div>');
-		orido_tm_data_images();
+		fronthand_tm_data_images();
 		modalBox.find('.service_popup_informations .image').after('<div class="main_title"><h3>'+title+'</h3></div>');
 		return false;
 	});
@@ -156,12 +156,12 @@ function orido_tm_service_popup(){
 // -------------  MODALBOX NEWS  -------------------
 // -------------------------------------------------
 
-function orido_tm_modalbox_news(){
+function fronthand_tm_modalbox_news(){
 	
 	"use strict";
 	
-	var modalBox		= jQuery('.orido_tm_modalbox');
-	var button			= jQuery('.orido_tm_news .orido_tm_full_link,.orido_tm_news .title a,.orido_tm_news .orido_tm_simple_button a');
+	var modalBox		= jQuery('.fronthand_tm_modalbox');
+	var button			= jQuery('.fronthand_tm_news .fronthand_tm_full_link,.fronthand_tm_news .title a,.fronthand_tm_news .fronthand_tm_simple_button a');
 	var closePopup		= modalBox.find('.close');
 	
 	button.on('click',function(){
@@ -175,8 +175,8 @@ function orido_tm_modalbox_news(){
 		modalBox.find('.description_wrap').html(content);
 		modalBox.find('.news_popup_informations').prepend('<div class="image"><img src="img/thumbs/4-2.jpg" alt="" /><div class="main" data-img-url="'+image+'"></div></div>');
 		modalBox.find('.news_popup_informations .image').after('<div class="details"><div class="metabox">'+metabox+'</div><div class="title"><h3>'+title+'</h3><div><div>');
-		orido_tm_data_images();
-		orido_tm_imgtosvg();
+		fronthand_tm_data_images();
+		fronthand_tm_imgtosvg();
 		return false;
 	});
 	closePopup.on('click',function(){
@@ -190,12 +190,12 @@ function orido_tm_modalbox_news(){
 // -------------  MODALBOX PORTFOLIO  --------------
 // -------------------------------------------------
 
-function orido_tm_modalbox_portfolio(){
+function fronthand_tm_modalbox_portfolio(){
 	
 	"use strict";
 	
-	var modalBox		= jQuery('.orido_tm_modalbox');
-	var button			= jQuery('.orido_tm_portfolio .details_link');
+	var modalBox		= jQuery('.fronthand_tm_modalbox');
+	var button			= jQuery('.fronthand_tm_portfolio .details_link');
 	var closePopup		= modalBox.find('.close');
 	
 	button.off().on('click',function(){
@@ -209,7 +209,7 @@ function orido_tm_modalbox_portfolio(){
 		modalBox.find('.description_wrap').html(content);
 		modalBox.find('.popup_details').prepend('<div class="top_image"><img src="img/thumbs/4-2.jpg" alt="" /><div class="main" data-img-url="'+image+'"></div></div>');
 		modalBox.find('.popup_details .top_image').after('<div class="portfolio_main_title"><span><a href="#">'+category+'</a></span><h3>'+title+'</h3><div>');
-		orido_tm_data_images();
+		fronthand_tm_data_images();
 		return false;
 	});
 	closePopup.on('click',function(){
@@ -262,7 +262,7 @@ function progress_by_frenify(wrapper){
 // ---------------   PRELOADER   -----------------------
 // -----------------------------------------------------
 
-function orido_tm_preloader(){
+function fronthand_tm_preloader(){
 	
 	"use strict";
 	
@@ -286,19 +286,19 @@ function orido_tm_preloader(){
 // -----------------   MY LOAD    ----------------------
 // -----------------------------------------------------
 
-function orido_tm_my_load(){
+function fronthand_tm_my_load(){
 	
 	"use strict";
 	
 	var speed	= 500;
-	setTimeout(function(){orido_tm_preloader();},speed);
+	setTimeout(function(){fronthand_tm_preloader();},speed);
 }
 
 // -----------------------------------------------------
 // ------------------   CURSOR    ----------------------
 // -----------------------------------------------------
 
-function orido_tm_cursor(){
+function fronthand_tm_cursor(){
 	
     "use strict";
 	
@@ -312,9 +312,9 @@ function orido_tm_cursor(){
 		o = !1;
 		window.onmousemove = function (s) {
 		o || (t.style.transform = "translate(" + s.clientX + "px, " + s.clientY + "px)"), e.style.transform = "translate(" + s.clientX + "px, " + s.clientY + "px)", n = s.clientY, i = s.clientX
-		}, $("body").on("mouseenter", "a, .orido_tm_testimonials .avatars ul li, .cursor-pointer", function () {
+		}, $("body").on("mouseenter", "a, .fronthand_tm_testimonials .avatars ul li, .cursor-pointer", function () {
 		e.classList.add("cursor-hover"), t.classList.add("cursor-hover")
-		}), $("body").on("mouseleave", "a, .orido_tm_testimonials .avatars ul li, .cursor-pointer", function () {
+		}), $("body").on("mouseleave", "a, .fronthand_tm_testimonials .avatars ul li, .cursor-pointer", function () {
 		$(this).is("a") && $(this).closest(".cursor-pointer").length || (e.classList.remove("cursor-hover"), t.classList.remove("cursor-hover"))
 		}), e.style.visibility = "visible", t.style.visibility = "visible"
     }
@@ -325,7 +325,7 @@ function orido_tm_cursor(){
 // ---------------    IMAGE TO SVG    ------------------
 // -----------------------------------------------------
 
-function orido_tm_imgtosvg(){
+function fronthand_tm_imgtosvg(){
 	
 	"use strict";
 	
@@ -359,7 +359,7 @@ function orido_tm_imgtosvg(){
 // --------------------   POPUP    ---------------------
 // -----------------------------------------------------
 
-function orido_tm_popup(){
+function fronthand_tm_popup(){
 	
 	"use strict";
 
@@ -398,7 +398,7 @@ function orido_tm_popup(){
 // ---------------   DATA IMAGES    --------------------
 // -----------------------------------------------------
 
-function orido_tm_data_images(){
+function fronthand_tm_data_images(){
 	
 	"use strict";
 	
@@ -415,7 +415,7 @@ function orido_tm_data_images(){
 // ----------------    CONTACT FORM    -----------------
 // -----------------------------------------------------
 
-function orido_tm_contact_form(){
+function fronthand_tm_contact_form(){
 	
 	"use strict";
 	
@@ -461,11 +461,11 @@ function orido_tm_contact_form(){
 // ----------------    OWL CAROUSEL    -----------------
 // -----------------------------------------------------
 
-function orido_tm_owl_carousel(){
+function fronthand_tm_owl_carousel(){
 
 	"use strict";
 	
-	var carousel			= jQuery('.orido_tm_portfolio .owl-carousel');
+	var carousel			= jQuery('.fronthand_tm_portfolio .owl-carousel');
 	
 	var rtlMode	= false;
 
@@ -514,7 +514,7 @@ function orido_tm_owl_carousel(){
 		
 	});
 	
-	var carousel2			= jQuery('.orido_tm_partners .owl-carousel');
+	var carousel2			= jQuery('.fronthand_tm_partners .owl-carousel');
 
 	carousel2.owlCarousel({
 		loop: true,
@@ -558,11 +558,11 @@ jQuery('.anchor_nav').onePageNav();
 // -----------------    DOWN    ------------------------
 // -----------------------------------------------------
 
-function orido_tm_down(){
+function fronthand_tm_down(){
 	
 	"use strict";
 	
-	var header = jQuery('.orido_tm_header').height();
+	var header = jQuery('.fronthand_tm_header').height();
 		
 	jQuery('.anchor').on('click',function(){
 		
@@ -588,10 +588,10 @@ function orido_tm_down(){
 
 $('.portfolio_list').waitForImages().done(function() {
 	"use strict";
-	orido_tm_portfolio_masonry();
+	fronthand_tm_portfolio_masonry();
 });
 
-function orido_tm_portfolio_masonry(){
+function fronthand_tm_portfolio_masonry(){
 	"use strict";
 	
 	$('.grid').masonry({
@@ -605,12 +605,12 @@ function orido_tm_portfolio_masonry(){
 // -------------   TOPBAR BG SCROLL  ---------------
 // -------------------------------------------------
 
-function orido_tm_nav_bg(){
+function fronthand_tm_nav_bg(){
 	
 	"use strict";
 	
 	jQuery(window).on('scroll',function(){
-		var menu	 		= jQuery('.orido_tm_header');
+		var menu	 		= jQuery('.fronthand_tm_header');
 		var progress	 	= jQuery('.progressbar');
 		var WinOffset		= jQuery(window).scrollTop();
 		
@@ -627,14 +627,14 @@ function orido_tm_nav_bg(){
 function hashtag(){
 	"use strict";
 	
-	var ccc 			= $('.orido_tm_header .menu .ccc');
-	var element 		= $('.orido_tm_header .menu .current a');
-	$('.orido_tm_header .menu a').on('mouseenter',function(){
+	var ccc 			= $('.fronthand_tm_header .menu .ccc');
+	var element 		= $('.fronthand_tm_header .menu .current a');
+	$('.fronthand_tm_header .menu a').on('mouseenter',function(){
 		var e 			= $(this);
 		currentLink(ccc,e);
 	});
-	$('.orido_tm_header .menu').on('mouseleave',function(){
-		element 		= $('.orido_tm_header .menu .current a');
+	$('.fronthand_tm_header .menu').on('mouseleave',function(){
+		element 		= $('.fronthand_tm_header .menu .current a');
 		currentLink(ccc,element);
 	});
 	currentLink(ccc,element);
@@ -647,21 +647,21 @@ function currentLink(ccc,e){
 	if(!e.length){return false;}
 	var left 		= e.offset().left;
 	var width		= e.outerWidth();
-	var menuleft 	= $('.orido_tm_header .menu').offset().left;
+	var menuleft 	= $('.fronthand_tm_header .menu').offset().left;
 	ccc.css({left: (left-menuleft) + 'px',width: width + 'px'});
 }
 
 function filter_hashtag(){
 	"use strict";
 	
-	var ccc 			= $('.orido_tm_informations .right .filter .ccc');
-	var element 		= $('.orido_tm_informations .right .filter .current');
-	$('.orido_tm_informations .right .filter a').on('mouseenter',function(){
+	var ccc 			= $('.fronthand_tm_informations .right .filter .ccc');
+	var element 		= $('.fronthand_tm_informations .right .filter .current');
+	$('.fronthand_tm_informations .right .filter a').on('mouseenter',function(){
 		var e 			= $(this);
 		currentLinkFilter(ccc,e);
 	});
-	$('.orido_tm_informations .right .filter').on('mouseleave',function(){
-		element 		= $('.orido_tm_informations .right .filter .current');
+	$('.fronthand_tm_informations .right .filter').on('mouseleave',function(){
+		element 		= $('.fronthand_tm_informations .right .filter .current');
 		currentLinkFilter(ccc,element);
 	});
 	currentLinkFilter(ccc,element);
@@ -674,21 +674,21 @@ function currentLinkFilter(ccc,e){
 	if(!e.length){return false;}
 	var left 		= e.offset().left;
 	var width		= e.outerWidth()+80;
-	var menuleft 	= $('.orido_tm_informations .right .filter').offset().left;
+	var menuleft 	= $('.fronthand_tm_informations .right .filter').offset().left;
 	ccc.css({left: (left-menuleft-40) + 'px',width: width + 'px'});
 }
 
 function service_hashtag(){
 	"use strict";
 	
-	var ccc 			= $('.orido_tm_service .ccc');
-	var element 		= $('.orido_tm_service .current');
-	$('.orido_tm_service .service_list ul li').on('mouseenter',function(){
+	var ccc 			= $('.fronthand_tm_service .ccc');
+	var element 		= $('.fronthand_tm_service .current');
+	$('.fronthand_tm_service .service_list ul li').on('mouseenter',function(){
 		var e 			= $(this);
 		currentLinkService(ccc,e);
 	});
-	$('.orido_tm_service .service_list').on('mouseleave',function(){
-		element 		= $('.orido_tm_service .current');
+	$('.fronthand_tm_service .service_list').on('mouseleave',function(){
+		element 		= $('.fronthand_tm_service .current');
 		currentLinkService(ccc,element);
 		element.closest('li').siblings().removeClass('mleave');
 	});
@@ -702,7 +702,7 @@ function currentLinkService(ccc,e){
 	if(!e.length){return false;}
 	var topOff 		= e.offset().top;
 	var height		= e.outerHeight();
-	var menuTop 	= $('.orido_tm_service .service_list').offset().top;
+	var menuTop 	= $('.fronthand_tm_service .service_list').offset().top;
 	e.closest('li').removeClass('mleave');
 	e.closest('li').siblings().addClass('mleave');
 	ccc.css({top: (topOff-menuTop) + 'px',height: height + 'px'});
@@ -712,7 +712,7 @@ function currentLinkService(ccc,e){
 // -------------------    TOTOP    ---------------------
 // -----------------------------------------------------
 
-function orido_tm_totop(){
+function fronthand_tm_totop(){
   
 	"use strict";
 	
@@ -730,7 +730,7 @@ function orido_tm_totop(){
 // ----------------    PROGRESS LINE    ----------------
 // -----------------------------------------------------
 
-function orido_tm_progress_line(){
+function fronthand_tm_progress_line(){
 	
 	"use strict";
 	
@@ -748,11 +748,11 @@ function orido_tm_progress_line(){
 // ------------------    ABOUT TABS    -----------------
 // -----------------------------------------------------
 
-function orido_tm_about_tabs(){
+function fronthand_tm_about_tabs(){
 	"use strict";
 	
-	var button		= jQuery('.orido_tm_informations .right .filter ul li a');
-	var tabList		= jQuery('.orido_tm_informations .right .content .wrapper');
+	var button		= jQuery('.fronthand_tm_informations .right .filter ul li a');
+	var tabList		= jQuery('.fronthand_tm_informations .right .content .wrapper');
 	
 	button.on('click',function(){
 		var element		= jQuery(this);
