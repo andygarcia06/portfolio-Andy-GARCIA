@@ -1523,6 +1523,15 @@ h6 { font-size: 16px; }
 	background-color: #FFC448;
 	padding: 120px 0px 110px 0px;
 }
+
+.fronthand_tm_portfolio_bis{
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	background-color: #F4B350;
+	padding: 120px 0px 110px 0px;
+}
 .fronthand_tm_portfolio .portfolio_list{
 	width: 100%;
 	height: auto;
@@ -1866,6 +1875,14 @@ h6 { font-size: 16px; }
 .fronthand_tm_testimonials .details .job{
 	font-size: 19px;
 	color: #707070;
+}
+
+.fronthand_specific_white_color{
+	color: #F6F6F6;
+}
+
+.fronthand_specific_span_color{
+	color: #F6F6F6;
 }
 
 /*---------------------------------------------------*/
@@ -2459,11 +2476,10 @@ h6 { font-size: 16px; }
 	margin:3%;
 	letter-spacing: 1.3px;
 	color: #F6F6F6;
-	background: #F4B350;
-    /* background: linear-gradient(90deg, rgb(242, 190, 34) 0%, rgb(249, 192, 3) 100%); */
+	background: #12141D;
 	border: none;
 	border-radius: 1000px;
-	box-shadow: 12px 12px 24px #F4B350 ;
+	box-shadow: 4px 4px 24px #12141D ;
 	transition: all 0.3s ease-in-out 0s;
 	cursor: pointer;
 	outline: none;
