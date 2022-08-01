@@ -2354,8 +2354,8 @@ background: linear-gradient(90deg, rgba(162,197,254,1) 0%, rgba(194,233,252,1) 1
 	justify-content: space-between;
 }
 .fronthand_tm_copyright .logo img{
-	max-width: 170px;
-	max-height: 80px;
+	max-width: 120px;
+	max-height: 50px;
 }
 .fronthand_tm_copyright .copy p{
 	color: var(--main-color);
@@ -2734,4 +2734,8 @@ background: linear-gradient(90deg, rgba(162,197,254,1) 0%, rgba(194,233,252,1) 1
 	.fronthand_tm_modalbox .description_wrap{padding: 20px;}
 	.fronthand_tm_modalbox .description_wrap:before{height: 20px;}
 	.fronthand_tm_modalbox .description_wrap:after{height: 20px;}
+}
+
+@media (max-width: 768px) {
+	.fronthand_tm_follow{visibility: hidden;}
 }
