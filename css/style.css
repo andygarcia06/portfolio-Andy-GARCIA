@@ -300,8 +300,8 @@ h6 { font-size: 16px; }
 	justify-content: space-between;
 }
 .fronthand_tm_mobile_menu .mobile_in .logo img{
-	max-width: 90px;
-	max-height: 70px;
+	max-width: 1100px;
+	max-height: 90px;
 }
 .fronthand_tm_mobile_menu .trigger{
 	line-height: 0;
@@ -388,8 +388,8 @@ h6 { font-size: 16px; }
 	justify-content: space-between;
 }
 .fronthand_tm_header .logo img{
-	max-width: 170px;
-	max-height: 90px;
+	max-width: 200px;
+	max-height: 120px;
 }
 .fronthand_tm_header .menu{
 	position: relative;
@@ -530,7 +530,7 @@ h6 { font-size: 16px; }
 	color: #FDFDFD;
 	font-family: var(--font-family-extra);
 	font-weight: 700;
-	background-color: #F4B350
+	background-color: #6DA8E2
 ;
 	border-radius: 16px;
 	padding: 22px 40px 23px 40px;
@@ -617,6 +617,9 @@ h6 { font-size: 16px; }
 	position: relative;
 	top: 5px;
 	margin-left: 20px;
+}
+.up_space{
+	margin-top: 2%;
 }
 .fronthand_tm_follow ul li{
 	margin: 0px 20px 0px 0px;
@@ -741,7 +744,7 @@ h6 { font-size: 16px; }
 	height: auto;
 	clear: both;
 	float: left;
-	background-color: #F4B350
+	background-color: #6DA8E2
 ;
 	padding: 180px 0px 120px 0px;
 	margin-bottom: 120px;
@@ -759,8 +762,8 @@ h6 { font-size: 16px; }
 	padding-right: 50px;
 }
 .fronthand_tm_about .left .box{
-	background-color: #FFC448;
-	display: inline-block;
+background: rgb(162,197,254);
+background: linear-gradient(90deg, rgba(162,197,254,1) 0%, rgba(194,233,252,1) 100%);	display: inline-block;
 	overflow: hidden;
 	padding-bottom: 85px;
 	position: relative;
@@ -773,7 +776,7 @@ h6 { font-size: 16px; }
 	position: relative;
 	margin-right: -30px;
 	margin-top: -95px;
-	color: #F4B350
+	color: #6DA8E2
 ;
 	line-height: 1;
 }
@@ -785,7 +788,7 @@ h6 { font-size: 16px; }
 }
 .fronthand_tm_about .name{
 	font-size: 80px;
-	color: #F4B350
+	color: #6DA8E2
 ;
 	font-weight: 700;
 	letter-spacing: -4px;
@@ -1083,7 +1086,7 @@ h6 { font-size: 16px; }
 	margin-bottom: 25px;
 }
 .fronthand_tm_informations .timelinebox .time .year{
-	color: #F4B350
+	color: #6DA8E2
 ;
 	display: block;
 	margin-bottom: 2px;
@@ -1152,8 +1155,8 @@ h6 { font-size: 16px; }
 	content: "";
 	width: 64px;
 	height: 64px;
-	background-color: #FFC448;
-	border-radius: 100%;
+background: rgb(162,197,254);
+background: linear-gradient(90deg, rgba(162,197,254,1) 0%, rgba(194,233,252,1) 100%);	border-radius: 100%;
 	left: 50%;
 	transform: translateX(-50%);
 	margin-top: 6px;
@@ -1208,7 +1211,7 @@ h6 { font-size: 16px; }
 	right: 0px;
 	position: absolute;
 	z-index: 1;
-	background-color: #F4B350
+	background-color: #6DA8E2
 ;
 	
 	-webkit-transition: all .5s ease;
@@ -1248,7 +1251,7 @@ h6 { font-size: 16px; }
 }
 .fronthand_tm_service .service_list .number{
 	display: inline-block;
-	color: #F4B350
+	color: #6DA8E2
 ;
 	font-size: 24px;
 	font-family: var(--font-family-extra);
@@ -1316,7 +1319,7 @@ h6 { font-size: 16px; }
 	fill: #fff;
 }
 .fronthand_tm_service .service_list ul li.mleave .number{
-	color: #F4B350
+	color: #6DA8E2
 ;
 }
 .fronthand_tm_service .service_list ul li.mleave .title{
@@ -1520,8 +1523,8 @@ h6 { font-size: 16px; }
 	height: auto;
 	clear: both;
 	float: left;
-	background-color: #FFC448;
-	padding: 120px 0px 110px 0px;
+background: rgb(162,197,254);
+background: linear-gradient(90deg, rgba(162,197,254,1) 0%, rgba(194,233,252,1) 100%);	padding: 120px 0px 110px 0px;
 }
 
 .fronthand_tm_portfolio_bis{
@@ -1529,7 +1532,7 @@ h6 { font-size: 16px; }
 	height: auto;
 	clear: both;
 	float: left;
-	background-color: #F4B350;
+	background-color: #6DA8E2;
 	padding: 120px 0px 110px 0px;
 }
 .fronthand_tm_portfolio .portfolio_list{
@@ -1882,7 +1885,12 @@ h6 { font-size: 16px; }
 }
 
 .fronthand_specific_span_color{
-	color: #F6F6F6;
+	color: #ff8281;
+}
+
+.fronthand_specific_bg-contact{
+	background: rgb(162,197,254);
+    background: linear-gradient(90deg, rgba(162,197,254,1) 0%, rgba(194,233,252,1) 100%);	padding: 120px 0px 110px 0px;
 }
 
 /*---------------------------------------------------*/
@@ -2212,7 +2220,7 @@ h6 { font-size: 16px; }
 .fronthand_tm_contact_form_btn{
 	border-radius: 15px;
 	padding: 3%;
-	background-color: #F4B350;
+	background-color: #6DA8E2;
 	color: #F6F6F6;
 	font-size: 110%;
 	border: 0px;
@@ -2334,8 +2342,8 @@ h6 { font-size: 16px; }
 	height: auto;
 	clear: both;
 	float: left;
-	background-color: #FFC448;
-	padding: 25px 0px;
+background: rgb(162,197,254);
+background: linear-gradient(90deg, rgba(162,197,254,1) 0%, rgba(194,233,252,1) 100%);	padding: 25px 0px;
 }
 .fronthand_tm_copyright .copyright_inner{
 	width: 100%;
@@ -2378,7 +2386,7 @@ h6 { font-size: 16px; }
   width: 6px;
   height: 6px;
   z-index: 100;
-  background-color: #F4B350
+  background-color: #6DA8E2
 ;
   -webkit-transition: width .3s ease-in-out, height .3s ease-in-out, margin .3s ease-in-out, opacity .3s ease-in-out;
   transition: width .3s ease-in-out, height .3s ease-in-out, margin .3s ease-in-out, opacity .3s ease-in-out;
@@ -2388,7 +2396,7 @@ h6 { font-size: 16px; }
   margin-top: -40px;
   width: 80px;
   height: 80px;
-  background-color: #F4B350
+  background-color: #6DA8E2
 ;
   opacity: .3;
 }
@@ -2397,7 +2405,7 @@ h6 { font-size: 16px; }
   margin-top: -15px;
   width: 30px;
   height: 30px;
-  border: 2px solid #F4B350
+  border: 2px solid #6DA8E2
 ;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -2476,10 +2484,10 @@ h6 { font-size: 16px; }
 	margin:3%;
 	letter-spacing: 1.3px;
 	color: #F6F6F6;
-	background: #12141D;
+	background: #ff8281;
 	border: none;
 	border-radius: 1000px;
-	box-shadow: 4px 4px 24px #12141D ;
+	box-shadow: 2px 2px 24px #12141D ;
 	transition: all 0.3s ease-in-out 0s;
 	cursor: pointer;
 	outline: none;
