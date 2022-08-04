@@ -268,6 +268,7 @@ h6 { font-size: 16px; }
 	float: left;
 }
 
+
 /*---------------------------------------------------*/
 /*	02) fronthand MOBILE MENU
 /*---------------------------------------------------*/
@@ -460,7 +461,7 @@ h6 { font-size: 16px; }
 	min-height: 100vh;
 	position: relative;
 	float: left;
-	background-image: url('../img/bg/picturesque-view-of-nice-france-in-the-evening-2021-09-07-15-31-31-utc\ \(2\).jpg');
+	/* background-image: url('../img/bg/picturesque-view-of-nice-france-in-the-evening-2021-09-07-15-31-31-utc\ \(2\).jpg'); */
 }
 .fronthand_tm_hero .container{
 	min-height: 100vh;
@@ -511,7 +512,7 @@ h6 { font-size: 16px; }
 }
 .fronthand_tm_hero .text p{
 	font-size: 16px;
-	color: #fff;
+	color: #12141D;
 	line-height: 26px;
 	max-width: 400px;
 }
@@ -559,6 +560,44 @@ h6 { font-size: 16px; }
 	        transition: all .3s ease;
 }
 .fronthand_tm_boxed_button a:hover{
+	background-color: var(--main-color);
+}
+.fronthand_tm_hero .fronthand_tm_boxed_button{
+	width: auto;
+}
+.fronthand_tm_boxed_button button{
+	text-decoration: none;
+	color: #FDFDFD;
+	font-family: var(--font-family-extra);
+	font-weight: 700;
+	background-color: #FF8281
+;
+	border-radius: 16px;
+	padding: 22px 40px 23px 40px;
+	display: inline-block;
+	white-space: nowrap;
+	word-wrap: break-word;
+	
+	-webkit-transition: all .3s ease;
+	   -moz-transition: all .3s ease;
+	    -ms-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
+}
+.fronthand_tm_boxed_button button .svg{
+	width: 24px;
+	height: 24px;
+	position: relative;
+	top: 0px;
+	margin-left: 6px;
+	
+	-webkit-transition: all .3s ease;
+	   -moz-transition: all .3s ease;
+	    -ms-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
+}
+.fronthand_tm_boxed_button button:hover{
 	background-color: var(--main-color);
 }
 .fronthand_tm_simple_button{
@@ -1539,6 +1578,16 @@ background: linear-gradient(90deg, rgba(162,197,254,1) 0%, rgba(194,233,252,1) 1
 	float: left;
 	background-color: #6DA8E2;
 	padding: 120px 0px 110px 0px;
+}
+
+.fronthand_tm_portfolio_background{
+	padding: 6%;
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	background-image: url('../img/bg/picturesque-view-of-nice-france-in-the-evening-2021-09-07-15-31-31-utc\ \(2\).jpg');
+
 }
 .fronthand_tm_portfolio .portfolio_list{
 	width: 100%;
