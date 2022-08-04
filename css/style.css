@@ -460,6 +460,7 @@ h6 { font-size: 16px; }
 	min-height: 100vh;
 	position: relative;
 	float: left;
+	background-image: url('../img/bg/picturesque-view-of-nice-france-in-the-evening-2021-09-07-15-31-31-utc\ \(2\).jpg');
 }
 .fronthand_tm_hero .container{
 	min-height: 100vh;
@@ -510,7 +511,7 @@ h6 { font-size: 16px; }
 }
 .fronthand_tm_hero .text p{
 	font-size: 16px;
-	color: #5A5A5A;
+	color: #fff;
 	line-height: 26px;
 	max-width: 400px;
 }
@@ -592,7 +593,7 @@ h6 { font-size: 16px; }
     position: absolute;
     left: auto;
     right: 0;
-    bottom: 3px;
+    bottom: -7px;
     transition: width .6s cubic-bezier(.25,.8,.25,1) 0s;
     background: currentColor;
 }
@@ -603,7 +604,8 @@ h6 { font-size: 16px; }
 }
 .fronthand_tm_hero .fronthand_tm_follow{
 	position: absolute;
-	bottom: 120px;
+	/* top: 200px; */
+	bottom: 20px;
 }
 .fronthand_tm_follow{
 	display: flex;
@@ -687,7 +689,7 @@ h6 { font-size: 16px; }
 .fronthand_tm_hero .avatar{
 	position: absolute;
 	width: 50%;
-	right: 0px;
+	right: -800px;
 	bottom: 0px;
 	
 }
@@ -823,6 +825,9 @@ background: linear-gradient(90deg, rgba(162,197,254,1) 0%, rgba(194,233,252,1) 1
 	margin-bottom: 30px;
 }
 .fronthand_tm_about .fronthand_tm_main_title h3{
+	color: #fff;
+}
+.fronthand_tm_main_title h4{
 	color: #fff;
 }
 .fronthand_tm_about .fronthand_tm_main_title h3 span:before{
@@ -2549,8 +2554,40 @@ background: linear-gradient(90deg, rgba(162,197,254,1) 0%, rgba(194,233,252,1) 1
 	  opacity: 0;
 	}
   }
+
 /*---------------------------------------------------*/
-/*	18) fronthand MEDIA QUERIES (FOR SMALL DEVIVES)
+/*	18) fronthand 404
+/*---------------------------------------------------*/
+.body_404 { 
+	background-image: url('../img/404/police-line-yellow-tape-crime-scene-2022-08-01-04-22-30-utc.jpg');
+	/* background-attachment: fixed; */
+	/* background-position: 5px 50px;  */
+	background-repeat: no-repeat, repeat;
+	color: #F6F6F6;
+}
+
+.title_404{
+	color: #F6F6F6;
+}
+
+.a_thanks{
+	color: #a2c5fe;
+}
+
+/*---------------------------------------------------*/
+/*	19) Z-index et particle.js
+/*---------------------------------------------------*/
+
+#particles-js{
+	z-index: 0;
+}
+
+.fronthand_tm_hero{
+	z-index: 10;
+}
+
+/*---------------------------------------------------*/
+/*	20) fronthand MEDIA QUERIES (FOR SMALL DEVIVES)
 /*---------------------------------------------------*/
 
 @media (max-width: 1600px) {
@@ -2646,7 +2683,7 @@ background: linear-gradient(90deg, rgba(162,197,254,1) 0%, rgba(194,233,252,1) 1
 	.container{padding: 0px 20px;}
 	.fronthand_tm_header{display: none;}
 	.fronthand_tm_mobile_menu{display: block;}
-	.fronthand_tm_hero .avatar{display: none;}
+	.fronthand_tm_hero .avatar{right:-350px;}
 	.fronthand_tm_hero .details{padding-right: 0px;width: 100%;}
 	.fronthand_tm_hero .short h3{font-size: 48px;}
 	.fronthand_tm_hero .short h3 .svg{width: 25px;height: 25px;left: 0px;}
@@ -2734,8 +2771,11 @@ background: linear-gradient(90deg, rgba(162,197,254,1) 0%, rgba(194,233,252,1) 1
 	.fronthand_tm_modalbox .description_wrap{padding: 20px;}
 	.fronthand_tm_modalbox .description_wrap:before{height: 20px;}
 	.fronthand_tm_modalbox .description_wrap:after{height: 20px;}
+	/* .fronthand_tm_follow{visibility: hidden;} */
 }
 
-@media (max-width: 768px) {
-	.fronthand_tm_follow{visibility: hidden;}
+@media (max-width: 400px){
+	.fronthand_tm_follow{visibility: hidden}
 }
+
+

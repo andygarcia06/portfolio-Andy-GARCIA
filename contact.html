@@ -6,7 +6,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
 <meta name="description" content="Name of your web site">
-<meta name="author" content="Marketify">
+<meta name="author" content="Andy GARCIA">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
@@ -23,9 +23,7 @@
 <link rel="icon" href="./img/favicon/favicon.png">
 
 <link rel="stylesheet" type="text/css" href="css/plugins.css" />
-<link rel="stylesheet" type="text/css" href="css/dark.css" />
 <link rel="stylesheet" type="text/css" href="css/style.css" />
-<!--[if lt IE 9]> <script type="text/javascript" src="js/modernizr.custom.js"></script> <![endif]-->
 <!-- /STYLES -->
 
 </head>
@@ -58,7 +56,7 @@
 		<header class="fronthand_tm_header fronthand_white_bg">
 			<div class="header_in">
 				<div class="logo">
-					<a href="./index.html"><img src="img/logo/logo-big.png" alt="" /></a>
+					<a href="./index.html"><img src="img/logo/logo-darker.png" alt="" /></a>
 				</div>
 				<!-- <div class="menu">
 					<ul class="anchor_nav">
@@ -75,45 +73,25 @@
 		<!-- /HEADER -->
 
 		<!-- CONTACT -->
-		<div class="fronthand_tm_section" id="portfolio">
+		<div class="fronthand_tm_section">
 			<div class="fronthand_tm_portfolio">
-				<div class="container">
+				<div class="container my-5">
 					<div class="fronthand_tm_main_title fronthand_tm_promotion_text">
 						<h3><span>Contactez-nous <br>pour nous présenter votre projet !</span></h3>
-                        <form class="my-4" action="https://formsubmit.co/andygarcia@live.fr" method="POST">
-                            <!-- Name input -->
-                            <div class="form-outline mb-4">
-                              <input type="text" name="name" id="form4Example1" class="form-control rounded" placeholder="Prénom et Nom" />
-                            </div>
-                          
-                            <!-- Email input -->
-                            <div class="mb-4">
-                              <input type="email" name="email" id="form4Example2" class="form-control rounded" placeholder="Email" />
-                            </div>
-                          
-                            <!-- Message input -->
-                            <div class="form-outline mb-4">
-                              <textarea class="form-control" type="text" name="text" id="form4Example3" rows="4" placeholder="Décrivez nous votre projet"></textarea>
-                            </div>
-                          
-                            <!-- Checkbox
-                            <div class="form-check d-flex justify-content-center mb-4">
-                              <input class="form-check-input me-2" type="checkbox" value="" id="form4Example4" checked />
-                              <label class="form-check-label" for="form4Example4">
-                                S'abonner également à la newsletter
-                              </label>
-                            </div> -->
-                          
-                            <!-- Submit button -->
-                            <div class="buttons">
-                                <!-- <div class="fronthand_tm_boxed_button fronthand_tm_promotion_text d-flex justify-content-center">
-                                    <button href="#" type="submit" class="fronthand_tm_contact_form_btn">Envoyer le formulaire </button>
-                                </div> -->
-                                <div class="wrap">
-                                    <button class="fronthand_specific_contact_btn">Envoyer le formulaire <img src="./img/svg/send.svg" alt=""> </button>
-                                </div>
-                            </div>
-                          </form>
+						  <form class="js-ajax-form my-4" method="post" action="https://formsubmit.co/andygarcia@fronthand.fr">
+							<div class="form-group form-outline mb-4">
+							  <input type="text" name="nom" class="form-control rounded" placeholder="Prenom et Nom" required>
+							</div>
+							<div class="form-group form-outline mb-4">
+							  <input type="email" name="email"  class="form-control rounded" required="" placeholder="Email *" required>
+							</div>
+							<div class="form-group form-outline mb-4">
+							  <textarea rows="3" name="message"  class="form-control rounded" placeholder="Décrivez votre projet"></textarea>
+							</div>
+							<div class="wrap">
+								<button class="fronthand_specific_contact_btn">Envoyer le formulaire <img src="./img/svg/send.svg" alt=""> </button>
+							</div>
+						</form>
 					</div>
 				</div>
 			</div>
@@ -124,18 +102,6 @@
 		<footer class="fronthand_tm_section" id="contact">
 			<div class="fronthand_tm_contact">
 				<div class="container">
-					<div class="infobox">
-						<div class="video_button">
-							<a class="popup-youtube" href="https://www.youtube.com/watch?v=cqCmz9Txb-c"><img class="anim_circle" src="img/hero/welcome.png" alt="" /><img class="svg" src="img/svg/play.svg" alt="" /></a>
-						</div>
-						<div class="text">
-							<h3>Travaillons ensemble !</h3>
-							<p>Nous serons ravis de pouvoir colaborer avec vous dans l'élaboration de vos projets</p>
-						</div>
-						<!-- <div class="fronthand_tm_boxed_button">
-							<a href="#">Envoyer <img class="svg" src="img/svg/send.svg" alt="" /></a>
-						</div> -->
-					</div>
 					<div class="connect">
 						<div class="left">
 							<ul>
@@ -145,7 +111,7 @@
 								</li>
 								<li>
 									<span class="name">Email:</span>
-									<p><a class="line_effect" href="#">fronthand@gmail.com</a></p>
+									<p><a class="line_effect" href="#">andygarcia@fronthand.fr</a></p>
 								</li>
 							</ul>
 						</div>
@@ -172,7 +138,7 @@
 				<div class="container">
 					<div class="copyright_inner">
 						<div class="logo">
-							<img src="img/logo/logo.png" alt="" />
+							<img src="img/logo/logo-small.png" alt="" />
 						</div>
 						<div class="copy">
 							<p>&copy; 2022 by Andy GARCIA</a> All Rights Reserved</p>
@@ -199,8 +165,8 @@
 	<!-- / WRAPPER ALL -->
 	
 <!-- SCRIPTS -->
+<script src="js/jquery.validate.min.js"></script>
 <script src="js/jquery.js"></script>
-<!--[if lt IE 10]> <script type="text/javascript" src="js/ie8.js"></script> <![endif]-->	
 <script src="js/plugins.js"></script>
 <script src="js/init.js"></script>
 <!-- ION icons -->
