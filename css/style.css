@@ -284,7 +284,7 @@ h6 { font-size: 16px; }
 }
 .fronthand_tm_mobile_menu .mobile_menu_inner{
 	width: 100%;
-	height: auto;
+	/* height:50px; */
 	float: left;
 	clear: both;
 	background-color: #fff;
@@ -303,6 +303,11 @@ h6 { font-size: 16px; }
 .fronthand_tm_mobile_menu .mobile_in .logo img{
 	max-width: 1100px;
 	max-height: 90px;
+}
+
+.fronthand_tm_mobile_menu .mobile_in .logo_mobile img{
+	padding: 2%;
+	width: 50%;
 }
 .fronthand_tm_mobile_menu .trigger{
 	line-height: 0;
@@ -728,8 +733,8 @@ h6 { font-size: 16px; }
 .fronthand_tm_hero .avatar{
 	position: absolute;
 	width: 50%;
-	right: -800px;
-	bottom: 0px;
+	right: -10%;
+	bottom: 20%;
 	
 }
 .fronthand_tm_hero .avatar .img{
@@ -2547,6 +2552,10 @@ background: linear-gradient(90deg, rgba(162,197,254,1) 0%, rgba(194,233,252,1) 1
 	outline: none;
 	position: relative;
 	padding: 10px;
+	}
+
+	.img_bigger{
+		width: 120%;
 	}
   
 	.fronthand_specific_contact_btn::before {
